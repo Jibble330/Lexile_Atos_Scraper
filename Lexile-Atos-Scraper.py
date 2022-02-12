@@ -14,7 +14,7 @@ def LexileSearch(ISBN):
     baseurl = "https://hub.lexile.com/find-a-book/book-details/"
     searchurl = baseurl + ISBN #Lexile's urls are built around ISBN's, which makes it considerably easier(and faster)
     options = webdriver.ChromeOptions()
-    options.binary_location = "GoogleChromePortable.exe"
+#    options.binary_location = "GoogleChromePortable.exe" #Uncomment if using a portable version of Google Chrome (must be in same directory as the program)
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     options.add_argument("--headless") #Comment this line if you want to see what's going on
     options.add_argument("--no-sandbox")
