@@ -36,6 +36,7 @@ def LexileSearch(ISBN):
 def ARSearch(ISBN):
     searchurl = "https://www.arbookfind.com/default.aspx"
     options = webdriver.ChromeOptions()
+    #    options.binary_location = "GoogleChromePortable.exe" #Uncomment if using a portable version of Google Chrome (must be in same directory as the program)
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     options.add_argument("--headless")#Comment this line if you want to see what's going on
     options.add_argument("--window-size=1920,1080")
